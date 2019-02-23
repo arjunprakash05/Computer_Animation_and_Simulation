@@ -1,0 +1,140 @@
+# SIG Skeleton Data
+# this file is automatically loaded when a .s of same file name is loaded
+# Original file created by Yazhou Huang
+
+KnSkeleton
+
+skeldata
+
+ik leftarm LeftHand
+ik rightarm RightHand
+ik leftleg LeftFoot
+ik rightleg RightFoot
+
+
+joint Hips
+{ channel XPos 0 free
+  channel YPos 0 free
+  channel ZPos 0 free
+  channel Quat free
+}
+
+joint Spine
+{
+  visgeo primitive capsule 4.4 4 0.8 20 center 0 -1.5 0 material amb 51 51 151 255 dif 99 155 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint Spine1
+{
+  visgeo primitive capsule 3.6 3.6 1.4 20 center 0 0 -0.4 material amb 51 51 151 255 dif 99 155 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint Spine2
+{
+  visgeo primitive capsule 3 2.2 1.6 20 center 0 2.34 0 material amb 51 51 151 255 dif 99 155 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint Head
+{
+visgeo primitive capsule 0.998085 0.998085 3.99234 20 center 0 3.91875 0.763015 orientation axis 1 0 -1.34382e-005 ang 5.81596 material amb 51 51 51 255 dif 204 85 53 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint RightArm
+{ 
+  channel Twist 0 -90 120
+  prerot  axis 0 1 0 ang -90
+  postrot axis 0 1 0 ang  90
+  visgeo primitive capsule 1.59205 1.59205 6.36819 20 center -6.36819 0 0 orientation axis 0 0 1 ang 90 material amb 51 51 51 255 dif 99 155 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint RightForeArm
+{ euler ZY
+  channel YRot 0 lim 0 160
+  channel ZRot 0 lim -120 45
+  prerot  axis 0 1 0 ang -90
+  postrot axis 0 1 0 ang  90
+  visgeo primitive capsule 1.15182 1.15182 4.60726 20 center -4.60726 0 0 orientation axis 0 0 1 ang 90 material amb 51 51 51 255 dif 99 155 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint RightHand
+{ channel Swing lim 50 90
+  prerot  axis 0 1 0 ang -90
+  postrot axis 0 1 0 ang  90
+  visgeo primitive box 3.5 0.75 2.25 20 center -3.5 0 0 color 240 200 155 255;
+}
+
+joint LeftArm
+{
+  channel Swing lim 110 150
+  channel Twist 0 -90 120
+  prerot  axis 0 1 0 ang  90
+  postrot axis 0 1 0 ang -90
+  visgeo primitive capsule 1.59205 1.59205 6.36819 20 center 6.36819 0 0 orientation axis 0 0 -1 ang 90 material amb 51 51 51 255 dif 99 155 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint LeftForeArm
+{ euler ZY
+  channel YRot 0 lim -160 0
+  channel ZRot 0 lim -45 120
+  prerot  axis 0 1 0 ang  90
+  postrot axis 0 1 0 ang -90
+  visgeo primitive capsule 1.15182 1.15182 4.60726 20 center 4.60726 0 0 orientation axis 0 0 -1 ang 90 material amb 51 51 51 255 dif 99 155 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;
+}
+
+joint LeftHand
+{
+  channel Swing lim 50 90
+  prerot  axis 0 1 0 ang  90
+  postrot axis 0 1 0 ang -90
+  visgeo primitive box 3.5 0.75 2.25 20 center 3.5 0 0 color 240 200 155 255;
+}
+
+joint RightUpLeg
+{ channel Swing lim 65 120
+  channel Twist 0 -30 100
+  prerot  axis 1 1 -1 ang  120
+  postrot axis 1 1 -1 ang -120
+  visgeo primitive capsule 2.31027 2.31026 9.24106 20 center -0.000145 -9.24106 0.0022 orientation axis -1 0 0 ang 180 material amb 51 51 51 255 dif 157 131 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;  
+}
+
+joint RightLeg
+ { euler ZY
+   channel YRot 0 lim 0 160
+   channel ZRot 0 lim -55 55
+   prerot  axis 1 1 -1 ang  120
+   postrot axis 1 1 -1 ang -120
+   visgeo primitive capsule 1.91 1.91 7.64 20 center 0 -7.64 0 orientation axis -1 0 0 ang 180 material amb 51 51 51 255 dif 157 131 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;  
+ }
+ 
+joint RightFoot
+{ channel Swing lim 35 60
+  prerot  axis 1 1 -1 ang  120
+  postrot axis 1 1 -1 ang -120
+  visgeo primitive capsule 0.800809 0.800809 3.20324 20 center -0.1771 -1.59555 2.77193 orientation axis 0.997965 -0 0.0637605 ang 119.875  material amb 100 100 100 255 dif 100 100 100 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;  
+}
+
+joint LeftUpLeg
+{ channel Swing lim 65 120
+  channel Twist 0 -100 30
+  prerot  axis 1 1 -1 ang  120
+  postrot axis 1 1 -1 ang -120
+  visgeo primitive capsule 2.31027 2.31026 9.24106 20 center -0.000145 -9.24106 0.0022 orientation axis -1 0 0 ang 180 material amb 51 51 51 255 dif 157 131 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;  
+}
+
+joint LeftLeg
+{ euler ZY
+  channel YRot 0 lim 0 160
+  channel ZRot 0 lim -55 55
+  prerot  axis 1 1 -1 ang  120
+  postrot axis 1 1 -1 ang -120
+  visgeo primitive capsule 1.91 1.91 7.64 20 center 0 -7.64 0 orientation axis -1 0 0 ang 180 material amb 51 51 51 255 dif 157 131 204 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;  
+}
+
+joint LeftFoot
+{ channel Swing lim 35 60
+  prerot  axis 1 1 -1 ang  120
+  postrot axis 1 1 -1 ang -120
+  visgeo primitive capsule 0.800809 0.800809 3.20324 20 center 0.183715 -1.59565 2.77144 orientation axis 0.99781 0 -0.0661436 ang 119.877  material amb 100 100 100 255 dif 100 100 100 255 spe 0 0 0 255 emi 0 0 0 255 shi 10;  
+}
+
+end

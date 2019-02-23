@@ -1,0 +1,27 @@
+
+# config file
+
+parameters
+{ particles = 400;  # 1 2 20 200
+  
+  initpos = -15 0 -15 15 0 15;
+  restitution = 0.001;
+  worldbox = -10.0 -30.0 -10.0 10.0 10.0 10.0;
+
+  col.ks = 8.0; # spring k
+  col.kd = 7;  # damping (.1 .6 .9)
+
+  part.mass = 0.8 0.8;       # min/max
+  part.vel = 22.0 22.0;      # min/max
+  part.restit = 1 1;         # min/max in [0.1,1]
+  part.dir = 0 0 0;
+  part.dir.rand = "-";       # random/-
+}
+
+end
+
+examples:
+- explosion
+- vertical line: with high and low damping
+- horizontal line
+- diagonal velocity
